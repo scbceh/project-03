@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+* {
+box-sizing: content-box;
+}
+
+body {
+ width: 100%;
+ font-family: 'Source Serif Pro', serif;
+ color: #4a4a4a;
+ background-color: white;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+  background-color: #2d3945;
+  font-family: 'Source Serif Pro', serif;
+  color: #FFF;
+  font-size: 2.5em;
+  padding: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 30px 0 10px 0;
+    text-align: center;
+}
+
+legend {
+    padding-top: 1px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+
+.intro {
+   font-family: 'Source Serif Pro', serif;
+   font-weight: bold;
+   font-size: 1.75em;
+   color: #8d9195;
+   text-align: center;
+   line-height: 1.5;
+   padding-bottom: 20px;
+   border-bottom: 7px double #2d3945;
+   margin: 5px;
+   width: 100%;
+}
+
+.news-intro {
+   font-family: 'Source Serif Pro', serif;
+   font-weight: bold;
+   font-size: 1.75em;
+   color: #8d9195;
+   text-align: left;
+   padding-left: 28px;
+   padding-bottom: 20px;
+   width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+ input[type="full_name"], input[type="text"], input[type="tel"], input[type="street"] input[type="email"], textarea#topics,
+ select#state {
+  background-color: #e8eeef;
+  padding: 25px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: none;
+  color: #8a97a0;
+  height: auto;
+  outline: 0;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+input[id="zipcode"] {
+  background-color: #e8eeef;
+  padding: 25px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 7px;
+  border: none;
+  color: #8a97a0;
+  height: auto;
+  outline: 0;
+  width: 30%;
+}
+
+select#state {
+  text-align: left;
+  height: 65px;
+}
+
+textarea#topics {
+    height: 90%;
+    width: 100%;
+}
+
+input:required,
+textarea:required {
+  border-color: red !important;
+}
+input:required + label {
+  color: red;
+}
+
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    font-size: 1em;
+    padding-right: 10px;
+}
+
+hr {
+    border: solid 2px #8d9193;
+    align-content: center;
+    width: 100%;
+}
+
+label {
+    font-size: 1.7em;
+    display: inline-block;
+    padding-left: 8px;
+    margin-bottom: 15px;
+    color: #8d9195
+  }
+
+label .light {
+    font-weight: 300;
+    display: inline;
+    float: left;
+    padding-left: 15px;
+  }
+
+  ol, ul {
+ list-style-type: none;
+  }
+
+  label.news {
+    padding-left: 5px;
+    line-height: 1.5;
+  }
+
+  .news-title {
+    text-align: left;
+    padding-top: 1px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+      margin: 0 0 20px 5px;
+  }
+
+  input[type="checkbox"]:checked + label {
+    font-weight: bold;
+  }
+
+  input[id="javascript"] {
+      margin-bottom: 35px;
+  }
+
+  input:focus,
+  textarea#topics:focus {
+      border: 2px solid #577e7e;
+      width: 100%;
+  }
+
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #58bbb3;
+    font-size: 1.85em;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 85%;
+    border: 1px solid #58bbb3;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  button:hover {
+      opacity: 0.75;
+  }
+
+  footer p {
+      text-align: center;
+      color: #8c9494;
+      margin: 30px auto;
+      font-size: 1.3em;
+      font-style: italic;
+  }
+
+  @media (min-width: 768px) {
+
+    main {
+        max-width: 85%;
+    }
+
+    textarea#topics {
+        height: 255px;
+        width: 100%;
+    }
+
+  .field, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .row, .col-25, .col-75, #zipcode {
+    font-size: .95em;
+    padding-right: 5px;
+    flex-direction: row;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+ }
+
+   #zipcode {
+   font-size: .95em;
+   padding-right: 5px;
+   flex-direction: row;
+   display: flex;
+   justify-content: stretch;
+   align-items: center;
+   width: 30%;
+ }
+
+ .col-25 {
+ flex: 0 144px;
+}
+.col-75 {
+ flex: 1;
+}
+
+ button {
+  width: 93%;
+ }
+}
